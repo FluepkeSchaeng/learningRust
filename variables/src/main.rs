@@ -2,7 +2,7 @@ use std::io;
 
 fn main() {
     // example of a constant declaration
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
+    const _THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 
     // explaining of mutability
     let mut x = 5;
@@ -21,51 +21,51 @@ fn main() {
     println!("The value of y in the outer scope is: {y}");
 
     // floating point types
-    let x = 2.0; // f64
+    let _x = 2.0; // f64
     let y: f32 = 3.0; // f32
 
     // simple mathematic operations
     // addition
-    let sum = 5 + 10;
+    let _sum = 5 + 10;
 
     //subtraction
-    let difference = 95.5 - 4.3;
+    let _difference = 95.5 - 4.3;
 
     // multiplikation
-    let product = 4 * 30;
+    let _product = 4 * 30;
 
     //division
-    let quotient = 56.7 / 32.2;
-    let truncated = -5 / 3; // results in -1
+    let _quotient = 56.7 / 32.2;
+    let _truncated = -5 / 3; // results in -1
 
     // boolean type
-    let t = true;
-    let f: bool = false; //with eyplicit type annotation
+    let _t = true;
+    let _f: bool = false; //with eyplicit type annotation
 
     // character type
     /* Rust's char type is four bytes in size and represents a Unicode
      *  Scalar Value, which means it can represent a lot more than ASCII.
      *  Accented letters; Chinese, Japanese and Korean characters; emoji;
      *  and zero-width spaces are all valid char values in Rust. */
-    let c = 'z';
-    let z: char = 'ℤ'; // with explicit type annotation
-    let heart_eyed_cat = '😻';
+    let _c = 'z';
+    let _z: char = 'ℤ'; // with explicit type annotation
+    let _heart_eyed_cat = '😻';
 
     // Compuound types (tuples and arrays)
 
     // tuple type
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let _tup: (i32, f64, u8) = (500, 6.4, 1);
     // also possible:
     let tup = (500, 6.4, 1);
-    let (x, y, z) = tup;
+    let (_x, _y, _z) = tup;
     println!("The value of y is {y}");
     // accessing tuple elements directly
-    let five_hundred = tup.0;
-    let six_point_four = tup.1;
-    let one = tup.2;
+    let _five_hundred = tup.0;
+    let _six_point_four = tup.1;
+    let _one = tup.2;
 
     // array type
-    let a = [1, 2, 3, 4, 5];
+    let _a = [1, 2, 3, 4, 5];
     let _months = [
         "January",
         "February",
